@@ -1,7 +1,7 @@
 # Manual Testing Project — E-Commerce Web Application
 
 ## Overview
-This repository contains the complete manual QA documentation for an **e-commerce web application**, covering the full testing lifecycle — planning, test design, execution, defect reporting, and final sign-off. It includes the test plan, test cases, requirements traceability matrix (RTM), 11 detailed bug reports with screenshots, and a final test summary report.
+This repository contains the complete manual QA documentation for an **e-commerce web application**, covering the full testing lifecycle — planning, test design, execution, defect reporting, and final sign-off. It includes the test plan, test cases, requirements traceability matrix (RTM), 11 detailed bug reports with screenshots, a consolidated bug report spreadsheet, and a final test summary report.
 
 The goal of this project was to manually validate core e-commerce user journeys — browsing, cart, checkout, login, and navigation — and surface real, reproducible defects the way a QA engineer would on a live project.
 
@@ -40,6 +40,7 @@ The goal of this project was to manually validate core e-commerce user journeys 
 ├── Test_Cases
 ├── RTM
 ├── Test_Summary_Report
+├── Bug_Reports.xlsx
 ├── Bug_Reports/
 │   ├── BUG-01_Items_cannot_be_removed_from_cart_problem
 │   ├── BUG-02_Checkout_blocked_Last_Name_field_is_not_...
@@ -75,6 +76,7 @@ The goal of this project was to manually validate core e-commerce user journeys 
 | [Test_Plan](./Test_Plan) | Scope, approach, resources, entry/exit criteria, and schedule for the testing effort |
 | [Test_Cases](./Test_Cases) | Full set of manual test cases executed against the application, covering positive, negative, and boundary scenarios |
 | [RTM](./RTM) | Requirements Traceability Matrix mapping requirements to test cases and execution status |
+| [Bug_Reports.xlsx](./Bug_Reports.xlsx) | Consolidated spreadsheet log of all 11 bug reports, with columns for Bug ID, Title, Module, Severity, Priority, and Status — useful as a quick-reference defect tracker alongside the individual bug report write-ups |
 | [Test_Summary_Report](./Test_Summary_Report) | Final summary of testing results, defect metrics, and overall quality assessment |
 
 ---
@@ -86,7 +88,7 @@ The goal of this project was to manually validate core e-commerce user journeys 
 | Total Test Cases Executed | See [Test_Cases](./Test_Cases) |
 | Total Defects Logged | 11 |
 | Defect Areas | Cart (2), Checkout (4), Catalog (1), Navigation (1), UI (1), Performance (1), Functionality (1) |
-| Reporting Format | Individual bug reports + screenshot evidence per defect |
+| Reporting Format | Individual bug reports + screenshot evidence per defect, plus a consolidated [Bug_Reports.xlsx](./Bug_Reports.xlsx) tracker |
 
 ---
 
@@ -106,7 +108,7 @@ The goal of this project was to manually validate core e-commerce user journeys 
 | BUG-10 | No loading indicator during delayed login | Performance / UX | Usability |
 | BUG-11 | Certain products cannot be added to cart | Cart | Functional |
 
-Each bug report follows a consistent format — **Bug ID, Title, Environment, Steps to Reproduce, Expected Result, Actual Result, Severity, Priority, and Screenshot** — and includes a corresponding screenshot in the [`Screenshots/`](./Screenshots) folder for visual evidence.
+Each bug report follows a consistent format — **Bug ID, Title, Environment, Steps to Reproduce, Expected Result, Actual Result, Severity, Priority, and Screenshot** — and includes a corresponding screenshot in the [`Screenshots/`](./Screenshots) folder for visual evidence. The [Bug_Reports.xlsx](./Bug_Reports.xlsx) spreadsheet consolidates all 11 defects into a single sortable/filterable log for quick review.
 
 ---
 
@@ -120,7 +122,7 @@ Each bug report follows a consistent format — **Bug ID, Title, Environment, St
 ## Tools & Techniques Used
 - **Manual testing** — exploratory and scripted execution
 - **Test design techniques** — equivalence partitioning, boundary value analysis, negative testing
-- **Bug tracking** — structured bug report documentation with reproducible steps
+- **Bug tracking** — structured bug report documentation with reproducible steps, consolidated in [Bug_Reports.xlsx](./Bug_Reports.xlsx)
 - **Traceability** — RTM linking requirements to test coverage
 - **Documentation** — spreadsheet-based test cases, RTM, and reporting
 
@@ -129,9 +131,10 @@ Each bug report follows a consistent format — **Bug ID, Title, Environment, St
 ## How to Navigate This Repo
 1. Start with the [Test_Plan](./Test_Plan) to understand testing scope and strategy
 2. Review [Test_Cases](./Test_Cases) and the [RTM](./RTM) for coverage details
-3. Browse [Bug_Reports/](./Bug_Reports) for detailed defect write-ups
-4. Cross-reference each bug with its screenshot in [Screenshots/](./Screenshots)
-5. Read the [Test_Summary_Report](./Test_Summary_Report) for the final quality verdict
+3. Open [Bug_Reports.xlsx](./Bug_Reports.xlsx) for a quick, consolidated view of all defects
+4. Browse [Bug_Reports/](./Bug_Reports) for detailed defect write-ups
+5. Cross-reference each bug with its screenshot in [Screenshots/](./Screenshots)
+6. Read the [Test_Summary_Report](./Test_Summary_Report) for the final quality verdict
 
 ---
 
